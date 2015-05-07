@@ -1,4 +1,0 @@
-# fastSCSP
-
-
-Coming soon...
