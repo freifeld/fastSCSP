@@ -1,0 +1,12 @@
+# Ignore specific files
+
+
+# Use wildcards as well
+*pyc
+*~
+*.o
+*.c
+*.html
+image/result
+image/result/*
+*.npy
