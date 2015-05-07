@@ -13,6 +13,9 @@ Email: liyixin@mit.edu
 
 Example usage of the superpixels code on all files in a directory
 """
+from sys import path
+if './' not in path:
+    path.insert(0,'./')
 from scipy import misc
 import scipy.io as sio
 from os import listdir
