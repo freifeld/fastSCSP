@@ -108,7 +108,7 @@ Example 4: If all the images in the directory have the same size, you can save c
 
          python demo_for_direc.py -d <directory_name> --imgs_of_the_same_size 
          
-(with or without the options for <nPixels_on_side>  and <i_std> mentioned above)
+(with or without the options for nPixels_on_side  and i_std mentioned above)
 
 For help:
 
