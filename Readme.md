@@ -10,7 +10,9 @@
 
 
 Authors: 
+
 Oren Freifeld  (email: freifeld@csail.mit.edu)
+
 Yixin Li (email: liyixin@mit.edu)
 
 An early and partial version of this code was written by Oren Freifeld. 
