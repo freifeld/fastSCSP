@@ -95,6 +95,11 @@ To run on a user-specified image with user-specified parameters:
 
 In the initialization, the area of each superpixel is, more or less, nPixels_on_side is^2. 
 Let K denote the number of superpixels. High nPixels_on_side means small K and vice versa.
+
+Note that the computation time *decreases* as the number of superpixels, K, increases.
+
+
+
 The i_std controls the tradeoff between spatial and color features. A small i_std means a small standard deviation for the color features
 (and thus making their effect more significant). In effect, small i_std = less regular boundaries.
 
