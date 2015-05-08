@@ -34,9 +34,9 @@ the following paper:
 
 Versions
 --------
-05/08/2015: Version 1.01 Minor bug fixes  (directory tree; relative paths; some windows-vs-linux issue) 
+05/08/2015, Version 1.01 -- Minor bug fixes  (directory tree; relative paths; some windows-vs-linux issue) 
 
-05/07/2015: Version 1.0  First release)
+05/07/2015, Version 1.0  -- First release
 
 
 
