@@ -6,7 +6,7 @@
 
 
 
-# fastSCSP: Version 1.0 (May 7, 2015): A Fast Method for Inferring High-Quality Simply-Connected Superpixels
+# fastSCSP: A Fast Method for Inferring High-Quality Simply-Connected Superpixels
 
 
 Authors: 
@@ -28,6 +28,15 @@ the following paper:
 	  booktitle={International Conference on Image Processing},
 	  year={2015},
 	}
+
+
+Versions
+--------
+05/08/2015: Version 1.01 Minor bug fixes  (directory tree; relative paths; some windows-vs-linux issue) 
+
+05/07/2015: Version 1.0  First release)
+
+
 
 
 Programming Language
