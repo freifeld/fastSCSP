@@ -104,11 +104,11 @@ Example 3:
 
 	 python demo_for_direc.py -d <directory_name> -n <nPixels_on_side> --i_std <i_std>
 	 
-Example 4: If all the images in the directory have the same size, you can some time by using
+Example 4: If all the images in the directory have the same size, you can save computing time by using
 
          python demo_for_direc.py -d <directory_name> --imgs_of_the_same_size 
          
-(with or without the options for <nPixels_on_side>  and <i_std>
+(with or without the options for nPixels_on_side  and i_std mentioned above)
 
 For help:
 
