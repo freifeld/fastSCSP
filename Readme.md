@@ -95,7 +95,7 @@ To run on a user-specified image with user-specified parameters:
 
 	 python demo.py -i <img_filename> -n <nPixels_on_side> --i_std <i_std>
 
-In the initialization, the area of each superpixel is, more or less, nPixels_on_side is^2. 
+In the initialization, the area of each superpixel is, more or less, nPixels_on_side^2. 
 Let K denote the number of superpixels. High nPixels_on_side means small K and vice versa.
 
 Note that the computation time *decreases* as the number of superpixels, K, increases.
