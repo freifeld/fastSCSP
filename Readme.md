@@ -46,7 +46,7 @@ Versions
 Programming Language
 --------
 The current implementation is essentially a python wrapper around CUDA.
-In the future (hopefully by the end of summer 2015), we intend to release two alternative wrappers that do no require python (one for Matlab, and one for C++). 
+Coming soon:  two  alternative wrappers that do no require python or pycuda (one for Matlab;  one for C++). 
 
 Requirements 
 -------------
