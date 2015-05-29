@@ -6,10 +6,12 @@
 
 
 
-# fastSCSP:
-
-A Fast Method for Inferring High-Quality Simply-Connected Superpixels
+# fastSCSP: A Fast Method for Inferring High-Quality Simply-Connected Superpixels
 ---------------------------------------------------------------------
+This implementation is based on our ICIP '15 paper.
+For the paper itself, see our project page:
+http://groups.csail.mit.edu/vision/sli/projects.php?name=fastSCSP
+
 
 Authors: 
 
