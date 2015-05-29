@@ -13,7 +13,7 @@ For the paper itself, see our project page:
 http://groups.csail.mit.edu/vision/sli/projects.php?name=fastSCSP
 
 
-Authors: 
+Authors of this software: 
 
 Oren Freifeld  (email: freifeld@csail.mit.edu)
 
