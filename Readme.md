@@ -19,8 +19,7 @@ Oren Freifeld  (email: freifeld@csail.mit.edu)
 
 Yixin Li (email: liyixin@mit.edu)
 
-An early and partial version of this code was written by Oren Freifeld. 
-The rest of the code was then completed by Yixin Li.
+An early/partial version of this software was written by Oren. It was then completed and improved by Yixin Li.
 
 This software is released under the MIT License (included with the software).
 Note, however, that using this code (and/or the results of running it) 
