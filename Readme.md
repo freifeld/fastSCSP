@@ -5,15 +5,6 @@ This implementation is based on the algorithm from our ICIP '15 paper.
 For the paper itself, see our project page:
 http://groups.csail.mit.edu/vision/sli/projects.php?name=fastSCSP
 
-
-Authors of this software: 
-
-Yixin Li (email: liyixin@mit.edu)
-
-Oren Freifeld  (email: freifeld@csail.mit.edu)
-
-An early/partial version of this software was written by Oren. It was then completed and improved by Yixin.
-
 This software is released under the MIT License (included with the software).
 Note, however, that using this code (and/or the results of running it) 
 to support any form of publication (e.g.,a book, a journal paper, 
@@ -168,4 +159,15 @@ However, while the complexity was fixed wrt (our) K, it was still slow for large
 Another step that takes some time but does not depend on the actual image is the construction of the SuperpixelWrapper object
 (this will be faster once we move to a C++ wrapper). However, when running the algorithm on 
 many images in the same directioy where all images have the same size, this object needs to be constructed only once.  This is what the --imgs_of_the_same_size option mentioned above does, leading to some speedups.
+
+
+Authors of this software: 
+-------------------------
+
+Yixin Li (email: liyixin@mit.edu)
+
+Oren Freifeld  (email: freifeld@csail.mit.edu)
+
+An early/partial version of this software was written by Oren. It was then completed and improved by Yixin.
+
 
