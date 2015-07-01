@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 # fastSCSP: 
 ## A Fast Method for Inferring High-Quality Simply-Connected Superpixels
 ---------------------------------------------------------------------
@@ -17,6 +9,7 @@ http://groups.csail.mit.edu/vision/sli/projects.php?name=fastSCSP
 Authors of this software: 
 
 Yixin Li (email: liyixin@mit.edu)
+
 Oren Freifeld  (email: freifeld@csail.mit.edu)
 
 An early/partial version of this software was written by Oren. It was then completed and improved by Yixin.
