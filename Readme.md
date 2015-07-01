@@ -35,7 +35,7 @@ The current implementation is essentially a python wrapper around CUDA (using py
 During July 2015, we intend to release a standalone C++/CUDA implementation,
 as well as a MATLAB wrapper (these will not require python or pycuda). 
 
-Remark: even though most of the work is done in CUDA, there are still some bookkeeping and minor computations and that are done outside the CUDA kernels. Thus, as to be expected, the C++ version is faster than the python one.
+Remark: even though most of the work is done in CUDA, there are still some bookkeeping and minor computations that are done outside the CUDA kernels. Thus, as to be expected, the C++ version is faster than the python one.
 
 
 Requirements 
