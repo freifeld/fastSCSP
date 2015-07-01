@@ -6,18 +6,18 @@
 
 
 
-# fastSCSP: A Fast Method for Inferring High-Quality Simply-Connected Superpixels
+# fastSCSP: 
+## A Fast Method for Inferring High-Quality Simply-Connected Superpixels
 ---------------------------------------------------------------------
-This implementation is based on our ICIP '15 paper.
+This implementation is based on the algorithm from our ICIP '15 paper.
 For the paper itself, see our project page:
 http://groups.csail.mit.edu/vision/sli/projects.php?name=fastSCSP
 
 
 Authors of this software: 
 
-Oren Freifeld  (email: freifeld@csail.mit.edu)
-
 Yixin Li (email: liyixin@mit.edu)
+Oren Freifeld  (email: freifeld@csail.mit.edu)
 
 An early/partial version of this software was written by Oren. It was then completed and improved by Yixin.
 
@@ -46,8 +46,11 @@ Versions
 
 Programming Language
 --------
-The current implementation is essentially a python wrapper around CUDA.
-Coming soon:  two  alternative wrappers that do no require python or pycuda (one for Matlab;  one for C++). 
+The current implementation is essentially a python wrapper around CUDA (using pycuda).
+
+During July 2015, we intend to release a standalone C++/CUDA implementation,
+as well as a MATLAB wrapper (these will not require python or pycuda). 
+
 
 Requirements 
 -------------
