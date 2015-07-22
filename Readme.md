@@ -68,6 +68,7 @@ pycuda (version: >= 2013.1.1)
 
 Instructions (for the python wrapper)
 -------------------------------------
+(these instructions are for the python wrapper; the instructions for matlab are similar, just check the demo files in the matlab directory)
 
 See demo.py for an example of running the algorithm on a single image.
 See demo_for_direc.py for an example of running the algorithm on all files in a directory (this assumes that all files are in valid image format).
