@@ -64,6 +64,13 @@ matplotlib (version: developed/tested on 1.3.1.  Some older versions should *pro
 
 pycuda (version: >= 2013.1.1)
 
+OS
+--
+The python and matlab wrappers were developed/tested on both Ubuntu 12.04 64-bit and Ubuntu 14.04 64-bit. 
+The python wrapper was also tested on Windows 7 Professional 64-bit.
+The matlab wrapper should *probably* work on Windows.
+
+
 
 
 Instructions (for the python wrapper)
