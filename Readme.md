@@ -21,6 +21,8 @@ the following paper:
 
 Versions
 --------
+07/22/2015, Version 1.02 -- Added a matlab wrapper (written by Yixin Li).
+
 05/08/2015, Version 1.01 -- Minor bug fixes  (directory tree; relative paths; some windows-vs-linux issue) 
 
 05/07/2015, Version 1.0  -- First release
@@ -30,19 +32,30 @@ Versions
 
 Programming Language
 --------
-The current implementation is essentially a python wrapper around CUDA (using pycuda).
+Most of the computations are done in CUDA. 
+At the moment, we provide two wrappers: one for python (using pycuda); one for Matlab.
 
-During July 2015, we intend to release a standalone C++/CUDA implementation,
-as well as a MATLAB wrapper (these will not require python or pycuda). 
+The results/timings reported in our ICIP paper were obtained using the python wrapper. 
+On 07/22/2015, we added the matlab wrapper. It produces results that are very similar (but not 100% identical) to the results from the python wrapper. Also note that we have tested the python code extensively, we hardly tested the matlab code. 
 
-Remark: even though most of the work is done in CUDA, there are still some bookkeeping and minor computations that are done outside the CUDA kernels. Thus, as to be expected, the C++ version is faster than the python one.
+During July 2015, we intend to release a standalone C++/CUDA implementation (which will not require python or matlab)
+
+Remark: even though most of the work is done in CUDA, there are still some bookkeeping and minor computations that are done outside the CUDA kernels. Thus, as to be expected, the C++ version is faster than the python and matlab versions.
 
 
-Requirements 
--------------
+General Requirements 
+--------------------
 
 CUDA (version >= 5.5)
 
+OS: 
+
+Developed/tested on Ubuntu 12.04 64-bit and Ubuntu 14.04 64-bit. 
+
+Also tested on Windows 7 Professional 64-bit.
+
+Python-Specific Requirements (not needed for the matlab version)
+----------------------------------------------------------------
 Numpy (version: developed/tested on 1.8. Some older versions should *probably* be fine too)
 
 Scipy (version: developed/tested on 0.13.  Some older versions should *probably* be fine too)
@@ -51,14 +64,10 @@ matplotlib (version: developed/tested on 1.3.1.  Some older versions should *pro
 
 pycuda (version: >= 2013.1.1)
 
-OS: 
 
-Developed/tested on Ubuntu 12.04 64-bit and Ubuntu 14.04 64-bit. 
 
-Also tested on Windows 7 Professional 64-bit.
-
-Instructions
-------------
+Instructions (for the python wrapper)
+-------------------------------------
 
 See demo.py for an example of running the algorithm on a single image.
 See demo_for_direc.py for an example of running the algorithm on all files in a directory (this assumes that all files are in valid image format).
@@ -148,7 +157,7 @@ Speeding up the initialization step
 
 By default, we use an hexagonal honeycomb tiling, computed (on the GPU) using brute force. When K and/or the image is very large, this can be a bit slow.
 Setting use_hex=False will use squares instead of hexagons. This will be faster, but less visually pleasing
-(that said, in case you are obssesed with benchmarks, note we found that in comparison to hexagons, squares give slighly better results on benchmarks, although we didn't bother to include the square-based results in the paper). 
+(that said, in case you are obsessed with benchmarks, note we found that in comparison to hexagons, squares give slightly better results on benchmarks, although we didn't bother to include the square-based results in the paper). 
 We thus suggest to stay with hexagons. To speed up the hexagonal initialization, 
 we first try to load a precomputed initialization since it does not depend on the actual image. It depends only 
 on the number of superpixels and the image size. If it doesn't exist, we compute and save it for a future use. Thus,
@@ -160,7 +169,7 @@ However, while the complexity was fixed wrt (our) K, it was still slow for large
 
 Another step that takes some time but does not depend on the actual image is the construction of the SuperpixelWrapper object
 (this will be faster once we move to a C++ wrapper). However, when running the algorithm on 
-many images in the same directioy where all images have the same size, this object needs to be constructed only once.  This is what the --imgs_of_the_same_size option mentioned above does, leading to some speedups.
+many images in the same directory where all images have the same size, this object needs to be constructed only once.  This is what the --imgs_of_the_same_size option mentioned above does, leading to some speedups.
 
 
 Authors of this software: 
@@ -171,5 +180,5 @@ Yixin Li (email: liyixin@mit.edu)
 Oren Freifeld  (email: freifeld@csail.mit.edu)
 
 An early/partial version of this software was written by Oren. It was then completed and improved by Yixin.
-
+Yixin also wrote the matlab wrapper. 
 
