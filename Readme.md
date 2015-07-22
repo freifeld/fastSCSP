@@ -36,7 +36,7 @@ Most of the computations are done in CUDA.
 At the moment, we provide two wrappers: one for python (using pycuda); one for Matlab.
 
 The results/timings reported in our ICIP paper were obtained using the python wrapper. 
-On 07/22/2015, we added the matlab wrapper. It produces results that are very similar (but not 100% identical) to the results from the python wrapper. Also note that we have tested the python code extensively, we hardly tested the matlab code. 
+On 07/22/2015, we added the matlab wrapper. It produces results that are very similar (but not 100% identical) to the results from the python wrapper. Also note that while we have tested the python code extensively, we hardly tested the matlab code. 
 
 During July 2015, we intend to release a standalone C++/CUDA implementation (which will not require python or matlab)
 
