@@ -54,7 +54,7 @@ Developed/tested on Ubuntu 12.04 64-bit and Ubuntu 14.04 64-bit.
 
 Also tested on Windows 7 Professional 64-bit.
 
-Additoinal Requirements for the Matlabb Wrapper
+Additoinal Requirements for the Matlab Wrapper
 -----------------------------------------------
 Matlab's Parallel Computing Toolbox
 
