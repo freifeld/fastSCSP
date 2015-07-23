@@ -18,6 +18,14 @@ the following paper:
 	  year={2015},
 	}
 
+Authors of this software: 
+-------------------------
+
+Yixin Li (email: liyixin@mit.edu)
+
+Oren Freifeld  (email: freifeld@csail.mit.edu)
+
+An early/partial version of this software was written by Oren. It was then completed and improved by Yixin, who also wrote the Matlab wrapper. 
 
 Versions
 --------
@@ -177,13 +185,5 @@ Another step that takes some time but does not depend on the actual image is the
 many images in the same directory where all images have the same size, this object needs to be constructed only once.  This is what the --imgs_of_the_same_size option mentioned above does, leading to some speedups.
 
 
-Authors of this software: 
--------------------------
 
-Yixin Li (email: liyixin@mit.edu)
-
-Oren Freifeld  (email: freifeld@csail.mit.edu)
-
-An early/partial version of this software was written by Oren. It was then completed and improved by Yixin.
-Yixin also wrote the Matlab wrapper. 
 
