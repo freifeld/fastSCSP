@@ -67,7 +67,7 @@ matplotlib (version: developed/tested on 1.3.1.  Some older versions should *pro
 
 pycuda (version: >= 2013.1.1)
 
-Instructions for the Python Matlab
+Instructions for the Matlab wrapper
 ----------------------------------
 Most of the instructions for the Python wrapper (see below) also apply for the Matlab wrapper. 
 Alternatively, just take a look at the demo files in the Matlab subdirectory.
