@@ -42,23 +42,22 @@ During July 2015, we intend to release a standalone C++/CUDA implementation (whi
 
 Remark: even though most of the work is done in CUDA, there are still some bookkeeping and minor computations that are done outside the CUDA kernels. Thus, as to be expected, the C++ version is faster than the python and matlab versions.
 
+OS
+--
+The python and matlab wrappers were developed/tested on both Ubuntu 12.04 64-bit and Ubuntu 14.04 64-bit. 
+The python wrapper was also tested on Windows 7 Professional 64-bit.
+The matlab wrapper should *probably* work on Windows.
 
 General Requirements 
 --------------------
 
 CUDA (version >= 5.5)
 
-OS: 
-
-Developed/tested on Ubuntu 12.04 64-bit and Ubuntu 14.04 64-bit. 
-
-Also tested on Windows 7 Professional 64-bit.
-
-Additoinal Requirements for the Matlab Wrapper
+Additional Requirements for the Matlab Wrapper
 -----------------------------------------------
 Matlab's Parallel Computing Toolbox
 
-Additoinal Requirements for the Python Wrapper
+Additional Requirements for the Python Wrapper
 -----------------------------------------------
 Numpy (version: developed/tested on 1.8. Some older versions should *probably* be fine too)
 
@@ -67,14 +66,6 @@ Scipy (version: developed/tested on 0.13.  Some older versions should *probably*
 matplotlib (version: developed/tested on 1.3.1.  Some older versions should *probably* be fine too)
 
 pycuda (version: >= 2013.1.1)
-
-OS
---
-The python and matlab wrappers were developed/tested on both Ubuntu 12.04 64-bit and Ubuntu 14.04 64-bit. 
-The python wrapper was also tested on Windows 7 Professional 64-bit.
-The matlab wrapper should *probably* work on Windows.
-
-
 
 
 Instructions (for the python wrapper)
