@@ -30,7 +30,7 @@ Versions
 
 
 
-Programming Language
+Programming Languages
 --------
 Most of the computations are done in CUDA. 
 At the moment, we provide two wrappers: one for python (using pycuda); one for Matlab.
@@ -54,8 +54,12 @@ Developed/tested on Ubuntu 12.04 64-bit and Ubuntu 14.04 64-bit.
 
 Also tested on Windows 7 Professional 64-bit.
 
-Python-Specific Requirements (not needed for the matlab version)
-----------------------------------------------------------------
+Additoinal Requirements for the Matlabb Wrapper
+-----------------------------------------------
+Matlab's Parallel Computing Toolbox
+
+Additoinal Requirements for the Python Wrapper
+-----------------------------------------------
 Numpy (version: developed/tested on 1.8. Some older versions should *probably* be fine too)
 
 Scipy (version: developed/tested on 0.13.  Some older versions should *probably* be fine too)
