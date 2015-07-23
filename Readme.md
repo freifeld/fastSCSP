@@ -21,7 +21,7 @@ the following paper:
 
 Versions
 --------
-07/22/2015, Version 1.02 -- Added a matlab wrapper (written by Yixin Li).
+07/22/2015, Version 1.02 -- Added a Matlab wrapper (written by Yixin Li).
 
 05/08/2015, Version 1.01 -- Minor bug fixes  (directory tree; relative paths; some windows-vs-linux issue) 
 
@@ -33,20 +33,20 @@ Versions
 Programming Languages
 --------
 Most of the computations are done in CUDA. 
-At the moment, we provide two wrappers: one for python (using pycuda); one for Matlab.
+At the moment, we provide two wrappers: one for Python (using pycuda); one for Matlab.
 
-The results/timings reported in our ICIP paper were obtained using the python wrapper. 
-On 07/22/2015, we added the matlab wrapper. It produces results that are very similar (but not 100% identical) to the results from the python wrapper. Also note that while we have tested the python code extensively, we hardly tested the matlab code. 
+The results/timings reported in our ICIP paper were obtained using the Python wrapper. 
+On 07/22/2015, we added the Matlab wrapper. It produces results that are very similar (but not 100% identical) to the results from the Python wrapper. Also note that while we have tested the Python code extensively, we hardly tested the Matlab code. 
 
-During July 2015, we intend to release a standalone C++/CUDA implementation (which will not require python or matlab)
+During July 2015, we intend to release a standalone C++/CUDA implementation (which will not require Python or Matlab)
 
-Remark: even though most of the work is done in CUDA, there are still some bookkeeping and minor computations that are done outside the CUDA kernels. Thus, as to be expected, the C++ version is faster than the python and matlab versions.
+Remark: even though most of the work is done in CUDA, there are still some bookkeeping and minor computations that are done outside the CUDA kernels. Thus, as to be expected, the C++ version is faster than the Python and Matlab versions.
 
 OS
 --
-The python and matlab wrappers were developed/tested on both Ubuntu 12.04 64-bit and Ubuntu 14.04 64-bit. 
-The python wrapper was also tested on Windows 7 Professional 64-bit.
-The matlab wrapper should *probably* work on Windows.
+The Python and Matlab wrappers were developed/tested on both Ubuntu 12.04 64-bit and Ubuntu 14.04 64-bit. 
+The Python wrapper was also tested on Windows 7 Professional 64-bit.
+The Matlab wrapper should *probably* work on Windows.
 
 General Requirements 
 --------------------
@@ -67,11 +67,13 @@ matplotlib (version: developed/tested on 1.3.1.  Some older versions should *pro
 
 pycuda (version: >= 2013.1.1)
 
+Instructions for the Python Matlab
+----------------------------------
+Most of the instructions for the Python wrapper (see below) also apply for the Matlab wrapper. 
+Alternatively, just take a look at the demo files in the Matlab subdirectory.
 
-Instructions (for the python wrapper)
+Instructions for the Python wrapper
 -------------------------------------
-(these instructions are for the python wrapper; the instructions for matlab are similar, just check the demo files in the matlab directory)
-
 See demo.py for an example of running the algorithm on a single image.
 See demo_for_direc.py for an example of running the algorithm on all files in a directory (this assumes that all files are in valid image format).
 
@@ -83,19 +85,19 @@ See the end of this README file for options the user can choose to speed up the 
 
 To run the algorithm on the default image (image/1.jpg) with default parameters:
 
-	 python demo.py
+	 Python demo.py
 
 To run on a user-specified image with default parameters:
 
-	 python demo.py -i <img_filename>
+	 Python demo.py -i <img_filename>
 
 For help:
 
-	 python demo.py -h
+	 Python demo.py -h
 
 To run on a user-specified image with user-specified parameters:
 
-	 python demo.py -i <img_filename> -n <nPixels_on_side> --i_std <i_std>
+	 Python demo.py -i <img_filename> -n <nPixels_on_side> --i_std <i_std>
 
 In the initialization, the area of each superpixel is, more or less, nPixels_on_side^2. 
 Let K denote the number of superpixels. High nPixels_on_side means small K and vice versa.
@@ -114,25 +116,25 @@ The rest is the same as above.
 Example 1: 
 To run superpixel code on all images under default directory (./image):
 
-	 python demo_for_direc.py
+	 Python demo_for_direc.py
 	 
 Example 2: 
 
-	 python demo_for_direc.py -d <directory_name>
+	 Python demo_for_direc.py -d <directory_name>
   
 Example 3: 
 
-	 python demo_for_direc.py -d <directory_name> -n <nPixels_on_side> --i_std <i_std>
+	 Python demo_for_direc.py -d <directory_name> -n <nPixels_on_side> --i_std <i_std>
 	 
 Example 4: If all the images in the directory have the same size, you can save computing time by using
 
-         python demo_for_direc.py -d <directory_name> --imgs_of_the_same_size 
+         Python demo_for_direc.py -d <directory_name> --imgs_of_the_same_size 
          
 (with or without the options for nPixels_on_side  and i_std mentioned above)
 
 For help:
 
-	 python demo_for_direc.py -h
+	 Python demo_for_direc.py -h
 
 
 
@@ -183,5 +185,5 @@ Yixin Li (email: liyixin@mit.edu)
 Oren Freifeld  (email: freifeld@csail.mit.edu)
 
 An early/partial version of this software was written by Oren. It was then completed and improved by Yixin.
-Yixin also wrote the matlab wrapper. 
+Yixin also wrote the Matlab wrapper. 
 
