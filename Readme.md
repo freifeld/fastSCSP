@@ -54,7 +54,7 @@ OS
 --
 The Python and Matlab wrappers were developed/tested on both Ubuntu 12.04 64-bit and Ubuntu 14.04 64-bit. 
 The Python wrapper was also tested on Windows 7 Professional 64-bit.
-The Matlab wrapper should *probably* work on Windows.
+The Matlab wrapper should *probably* work on Windows and Mac. 
 
 General Requirements 
 --------------------
