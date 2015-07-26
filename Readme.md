@@ -1,4 +1,4 @@
-# fastSCSP: 
+# fastSCSP
 ## A Fast Method for Inferring High-Quality Simply-Connected Superpixels
 ---------------------------------------------------------------------
 This implementation is based on the algorithm from our ICIP '15 paper.
