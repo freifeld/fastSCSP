@@ -68,7 +68,7 @@ General Requirements
 --------------------
 
 CUDA (version >= 5.5)
-Additional Requirements for the Matlab Wrapper
+Additional Requirements for the C++ Wrapper
 -----------------------------------------------
 OpenCV
 
