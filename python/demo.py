@@ -26,9 +26,9 @@ from superpixels.SuperpixelsWrapper import SuperpixelsWrapper
 from of.utils import *
 
 
-def main(img_filename = os.path.join('image','1.jpg'), 
+def main(img_filename = os.path.join('image','2.jpg'), 
         nPixels_on_side = 15,
-        i_std = 15 # std dev for color Gaussian
+        i_std = 20 # std dev for color Gaussian
         ):
     if img_filename is None:
         raise ValueError("img_filename cannot be None")
@@ -132,7 +132,7 @@ def main(img_filename = os.path.join('image','1.jpg'),
 if __name__ == "__main__":  
     import argparse
     
-    default_fname=os.path.join('image','1.jpg')
+    default_fname=os.path.join('image','2.jpg')
     parser = argparse.ArgumentParser()
     parser.add_argument("-i","--img_filename",
                         nargs='?',
@@ -142,7 +142,7 @@ if __name__ == "__main__":
                         const=15,default=15)
     parser.add_argument("--i_std", type=int, help="std dev for color Gaussians, should be 5<= value <=40. A smaller value leads to more irregular superpixels",
                         nargs='?',
-                        const=15,default=15)
+                        const=20,default=20)
     args = parser.parse_args()
     
      

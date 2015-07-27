@@ -1,6 +1,6 @@
 %% user inputs here
 nPixels_in_square_side = 15;
-i_std = 10;
+i_std = 20;
 img_name = fullfile('image', '2.jpg');
 
 disp(img_name);
@@ -16,6 +16,7 @@ disp('initialize superpixels...')
 
 disp(strcat('dimx: ', num2str(dimx)));
 disp(strcat('dimy: ', num2str(dimy)));
+disp(strcat('i_std: ', num2str(i_std)));
 disp(strcat('nPixels_in_square_side: ', num2str(nPixels_in_square_side)));
 disp(strcat('number of superpixels: ', num2str(sp.nSps)));
 

@@ -20,5 +20,5 @@ image/result/*
 *.npy
 
 
-*/image/result/*
+*/image/result/*png
 matlab/seg_init.png
