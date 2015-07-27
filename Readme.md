@@ -25,10 +25,12 @@ Yixin Li (email: liyixin@mit.edu)
 
 Oren Freifeld  (email: freifeld@csail.mit.edu)
 
-An early/partial version of this software was written by Oren. It was then completed and improved by Yixin, who also wrote the Matlab wrapper. 
+An early/partial version of this software, using python and CUDA, was written by Oren. It was then completed and improved by Yixin, who also wrote the Matlab and C++ wrappers. 
 
 Versions
 --------
+07/27/2015, Version 1.03 -- Added a C++ wrapper (written by Yixin Li).
+
 07/22/2015, Version 1.02 -- Added a Matlab wrapper (written by Yixin Li).
 
 05/08/2015, Version 1.01 -- Minor bug fixes  (directory tree; relative paths; some windows-vs-linux issue) 
@@ -48,20 +50,19 @@ We provide three (independent) wrappers:
 3) C++.
 
 The results/timings reported in our ICIP paper were obtained using the Python wrapper. 
-The Matlab wrapper produces results that are very similar (but not 100% identical) to the results from the Python wrapper. 
-
-Note that while we have tested the Python wrapper extensively, we hardly tested the Matlab and C++ wrappers.
-However, they all wrapp the same CUDA kernels.
+The Matlab and C++ wrappers produce results that are very similar (but not 100% identical) to the results from the Python wrapper. While we have tested the Python wrapper extensively, we hardly tested the Matlab and C++ wrappers. However, they all wrapp the same CUDA kernels.
 
 
 
-Remark: while most of the work is done in CUDA, there are still some bookkeeping and minor computations that are done outside the CUDA kernels. Thus, as to be expected, the C++ version is faster than the Python and Matlab versions.
+While most of the work is done in CUDA, there are still some bookkeeping and minor computations that are done outside the CUDA kernels. Thus, as to be expected, the C++ wrapper is faster than the Python and Matlab versions. The python wrapper also sometimes halts a little the first time it is called (it seems to be less related to the generation of pyc files, and more related to argparse).
 
 OS
 --
-The Python and Matlab wrappers were developed/tested on both Ubuntu 12.04 64-bit and Ubuntu 14.04 64-bit. 
-The Python wrapper was also tested on Windows 7 Professional 64-bit.
-The Matlab wrapper should *probably* work on Windows and Mac. 
+All three wrappers were developed/tested on both Ubuntu 12.04 64-bit and Ubuntu 14.04 64-bit. 
+The Python wrapper was also tested on Windows 7 Professional 64-bit. 
+The Matlab and C++ wrapper should *probably* work on Windows.
+
+Regardin Mac: we are fairly optimistic about it, but as we don't have access at the moment to a Mac with CUDA set up we couldn't test it. 
 
 General Requirements 
 --------------------
