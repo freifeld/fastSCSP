@@ -1,6 +1,7 @@
 # Ignore specific files
 cpp/CMakeCache.txt
 cpp/Makefile
+cpp/CMakeFiles
 cpp/CMakeFiles/Makefile2 
 cpp/CMakeFiles/Makefile.cmake
 cpp/CMakeFiles/CMakeDirectoryInformation.cmake
@@ -19,4 +20,5 @@ image/result/*
 *.npy
 
 
-matlab/image/result/*
+*image/result/*
+matlab/seg_init.png

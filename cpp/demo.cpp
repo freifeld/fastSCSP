@@ -37,7 +37,7 @@ int main( int argc, char** argv )
     
     // get the image filename, nPixels_in_square_side and i_std
     // the defaults
-    String filename = "image/1.jpg";
+    String filename = "image/2.jpg";
     int nPixels_in_square_side = 15;
     int i_std = 20;
 
