@@ -41,10 +41,11 @@ Versions
 Programming Languages
 --------
 Most of the computations are done in CUDA. 
-We provide three (independent) wrappers: 
-1) Python
-2) Matlab
-3) C++
+We provide three (independent) wrappers:
+
+1) Python;
+2) Matlab;
+3) C++.
 
 The results/timings reported in our ICIP paper were obtained using the Python wrapper. 
 The Matlab wrapper produces results that are very similar (but not 100% identical) to the results from the Python wrapper. 
