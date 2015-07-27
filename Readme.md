@@ -41,14 +41,20 @@ Versions
 Programming Languages
 --------
 Most of the computations are done in CUDA. 
-At the moment, we provide two wrappers: one for Python (using pycuda); one for Matlab.
+We provide three (independent) wrappers: 
+1) Python
+2) Matlab
+3) C++
 
 The results/timings reported in our ICIP paper were obtained using the Python wrapper. 
-The Matlab wrapper produces results that are very similar (but not 100% identical) to the results from the Python wrapper. Note that while we have tested the Python wrapper extensively, we hardly tested the Matlab wrapper. 
+The Matlab wrapper produces results that are very similar (but not 100% identical) to the results from the Python wrapper. 
 
-During July 2015, we intend to release a standalone C++/CUDA implementation (which will not require Python or Matlab)
+Note that while we have tested the Python wrapper extensively, we hardly tested the Matlab and C++ wrappers.
+However, they all wrapp the same CUDA kernels.
 
-Remark: even though most of the work is done in CUDA, there are still some bookkeeping and minor computations that are done outside the CUDA kernels. Thus, as to be expected, the C++ version is faster than the Python and Matlab versions.
+
+
+Remark: while most of the work is done in CUDA, there are still some bookkeeping and minor computations that are done outside the CUDA kernels. Thus, as to be expected, the C++ version is faster than the Python and Matlab versions.
 
 OS
 --
@@ -75,13 +81,27 @@ matplotlib (version: developed/tested on 1.3.1.  Some older versions should *pro
 
 pycuda (version: >= 2013.1.1)
 
-Instructions for the Matlab wrapper
-----------------------------------
+
+Instructions for compiling the C++ wrapper
+-----------------------------------------
+First run cmake:
+	 $ cmake .
+Then run make:
+	 $ make
+This should generate two programs: Sp_demo and Sp_demo_for_direc 
+
+Instructions for using the C++ wrapper
+-----------------------------------------
+Most of the instructions for the Python wrapper (see below) also apply for the C++ wrapper.
+Alternatively, just take a look at the demo files in the cpp subdirectory.
+
+Instructions for using the Matlab wrapper
+-----------------------------------------
 Most of the instructions for the Python wrapper (see below) also apply for the Matlab wrapper. 
 Alternatively, just take a look at the demo files in the Matlab subdirectory.
 
-Instructions for the Python wrapper
--------------------------------------
+Instructions for using the Python wrapper
+-----------------------------------------
 See demo.py for an example of running the algorithm on a single image.
 See demo_for_direc.py for an example of running the algorithm on all files in a directory (this assumes that all files are in valid image format).
 
