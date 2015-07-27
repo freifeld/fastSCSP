@@ -94,7 +94,7 @@ On our machines this is "/usr/local/include/opencv"
 
 Now run cmake:
 	 $ cmake .
-	 
+
 Then run make:
 
 	 $ make
