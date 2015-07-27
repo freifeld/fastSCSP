@@ -1,5 +1,12 @@
 # Ignore specific files
-
+cpp/CMakeCache.txt
+cpp/Makefile
+cpp/CMakeFiles/Makefile2 
+cpp/CMakeFiles/Makefile.cmake
+cpp/CMakeFiles/CMakeDirectoryInformation.cmake
+cpp/cmake_install.cmake
+cpp/Sp_demo_for_direc
+cpp/Sp_demo
 
 # Use wildcards as well
 *pyc
@@ -10,3 +17,6 @@
 image/result
 image/result/*
 *.npy
+
+
+matlab/image/result/*
