@@ -68,6 +68,9 @@ General Requirements
 --------------------
 
 CUDA (version >= 5.5)
+Additional Requirements for the Matlab Wrapper
+-----------------------------------------------
+OpenCV
 
 Additional Requirements for the Matlab Wrapper
 -----------------------------------------------
@@ -86,7 +89,10 @@ pycuda (version: >= 2013.1.1)
 
 Instructions for compiling the C++ wrapper
 -----------------------------------------
-First run cmake:
+First thing you need to do is to specify the OpenCV_DIR in the CMakeLists.txt file.
+On our machines this is "/usr/local/include/opencv"
+
+Now run cmake:
 	 $ cmake .
 Then run make:
 	 $ make
