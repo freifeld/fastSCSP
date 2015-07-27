@@ -92,7 +92,8 @@ Instructions for compiling the C++ wrapper
 The first thing you need to do is to specify the OpenCV_DIR in the CMakeLists.txt file.
 On our machines this is "/usr/local/include/opencv"
 
-Now run cmake:
+Now run cmake (note the "."):
+
 	 $ cmake .
 
 Then run make:
