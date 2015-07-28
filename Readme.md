@@ -50,7 +50,7 @@ We provide three (independent) wrappers:
 3) C++.
 
 The results/timings reported in our ICIP paper were obtained using the Python wrapper. 
-The Matlab and C++ wrappers produce results that are very similar (but not 100% identical) to the results from the Python wrapper. While we have tested the Python wrapper extensively, we hardly tested the Matlab and C++ wrappers. However, they all wrapp the same CUDA kernels.
+The Matlab and C++ wrappers produce results that are very similar (but not 100% identical) to the results from the Python wrapper. While we have tested the Python wrapper extensively, we hardly tested the Matlab and C++ wrappers. However, they all wrap the same CUDA kernels.
 
 
 
