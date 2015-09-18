@@ -2,8 +2,7 @@
 ## A Fast Method for Inferring High-Quality Simply-Connected Superpixels
 ---------------------------------------------------------------------
 This implementation is based on the algorithm from our ICIP '15 paper.
-For the paper itself, see our project page:
-http://groups.csail.mit.edu/vision/sli/projects.php?name=fastSCSP
+For the paper itself, see our [project page](http://groups.csail.mit.edu/vision/sli/projects.php?name=fastSCSP).
 
 This software is released under the MIT License (included with the software).
 Note, however, that using this code (and/or the results of running it) 
