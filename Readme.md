@@ -158,7 +158,7 @@ To run superpixel code on all images under default directory (./image):
 	 
 Example 2: 
 
-	 Python demo_for_direc.py -d <directory_name>
+	 python demo_for_direc.py -d <directory_name>
   
 Example 3: 
 
@@ -166,13 +166,13 @@ Example 3:
 	 
 Example 4: If all the images in the directory have the same size, you can save computing time by using
 
-         Python demo_for_direc.py -d <directory_name> --imgs_of_the_same_size 
+         python demo_for_direc.py -d <directory_name> --imgs_of_the_same_size 
          
 (with or without the options for nPixels_on_side  and i_std mentioned above)
 
 For help:
 
-	 Python demo_for_direc.py -h
+	 python demo_for_direc.py -h
 
 
 
