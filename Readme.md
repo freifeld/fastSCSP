@@ -61,7 +61,7 @@ All three wrappers were developed/tested on both Ubuntu 12.04 64-bit and Ubuntu 
 The Python wrapper was also tested on Windows 7 Professional 64-bit. 
 The Matlab and C++ wrapper should *probably* work on Windows.
 
-Regardin Mac: we are fairly optimistic about it, but as we don't have access at the moment to a Mac with CUDA set up we couldn't test it. 
+Regarding Mac: we are fairly optimistic about it, but as we don't have access at the moment to a Mac with CUDA set up we couldn't test it. 
 
 General Requirements 
 --------------------
@@ -123,19 +123,19 @@ See the end of this README file for options the user can choose to speed up the 
 
 To run the algorithm on the default image (image/1.jpg) with default parameters:
 
-	 Python demo.py
+	 python demo.py
 
 To run on a user-specified image with default parameters:
 
-	 Python demo.py -i <img_filename>
+	 python demo.py -i <img_filename>
 
 For help:
 
-	 Python demo.py -h
+	 python demo.py -h
 
 To run on a user-specified image with user-specified parameters:
 
-	 Python demo.py -i <img_filename> -n <nPixels_on_side> --i_std <i_std>
+	 python demo.py -i <img_filename> -n <nPixels_on_side> --i_std <i_std>
 
 In the initialization, the area of each superpixel is, more or less, nPixels_on_side^2. 
 Let K denote the number of superpixels. High nPixels_on_side means small K and vice versa.
@@ -154,7 +154,7 @@ The rest is the same as above.
 Example 1: 
 To run superpixel code on all images under default directory (./image):
 
-	 Python demo_for_direc.py
+	 python demo_for_direc.py
 	 
 Example 2: 
 
@@ -162,7 +162,7 @@ Example 2:
   
 Example 3: 
 
-	 Python demo_for_direc.py -d <directory_name> -n <nPixels_on_side> --i_std <i_std>
+	 python demo_for_direc.py -d <directory_name> -n <nPixels_on_side> --i_std <i_std>
 	 
 Example 4: If all the images in the directory have the same size, you can save computing time by using
 
