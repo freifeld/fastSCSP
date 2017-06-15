@@ -102,12 +102,12 @@ This should generate two programs: Sp_demo and Sp_demo_for_direc
 
 Instructions for using the C++ wrapper
 -----------------------------------------
-Most of the instructions for the Python wrapper (see below) also apply for the C++ wrapper.
+Most of the instructions for the Python wrapper (see below) also apply to the C++ wrapper.
 Alternatively, just take a look at the demo files in the cpp subdirectory.
 
 Instructions for using the Matlab wrapper
 -----------------------------------------
-Most of the instructions for the Python wrapper (see below) also apply for the Matlab wrapper. 
+Most of the instructions for the Python wrapper (see below) also apply to the Matlab wrapper. 
 Alternatively, just take a look at the demo files in the Matlab subdirectory.
 
 Instructions for using the Python wrapper
