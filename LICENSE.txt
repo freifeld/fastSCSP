@@ -1,7 +1,7 @@
 In ADDITION to following all the terms in the copyright notice below,
-using this code (and/or the results of running it) 
+if you use this code (and/or the results of running it) 
 to support any form of publication (e.g.,a book, a journal paper, 
-a conference paper, a patent application, etc.) requires you to cite
+a conference paper, a patent application, etc.), then we ask you to cite
 the following paper:
 
 @incollection{Freifeld:ICIP:2015,
