@@ -5,9 +5,9 @@ This implementation is based on the algorithm from our paper, [\[Freifeld, Li an
 See also our [project page](http://groups.csail.mit.edu/vision/sli/projects.php?name=fastSCSP).
 
 This software is released under the MIT License (included with the software).
-Note, however, that using this code (and/or the results of running it) 
+Note, however, that if you use this code (and/or the results of running it) 
 to support any form of publication (e.g.,a book, a journal paper, 
-a conference paper, a patent application, etc.) requires you to cite
+a conference paper, a patent application, etc.), then we ask you to cite
 the following paper:
 
 	@incollection{Freifeld:ICIP:2015,
