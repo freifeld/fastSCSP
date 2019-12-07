@@ -8,7 +8,7 @@ Dec 7, 2019, update 1:
 [a Python 3 wrapper is availble here](https://github.com/BGU-CS-VIL/fastScsp)
 
 Dec 7, 2019, update 2: 
-Note that in ICCV 2019 we released a better better superpixel method, called [Bayesian Adaptive Superpixel Segmentation](https://github.com/BGU-CS-VIL/BASS).
+Note that in ICCV 2019 we released a better superpixel method, called [Bayesian Adaptive Superpixel Segmentation](https://github.com/BGU-CS-VIL/BASS).
 
 
 This software is released under the MIT License (included with the software).
