@@ -44,7 +44,7 @@ Programming Languages
 Most of the computations are done in CUDA. 
 We provide three (independent) wrappers:
 
-1) Python;
+1) Python 2 (Update, Dec 12, 2019: [a Python 3 wrapper is availble here](https://github.com/BGU-CS-VIL/fastScsp))
 2) Matlab;
 3) C++.
 
