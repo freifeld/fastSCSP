@@ -5,7 +5,7 @@ This implementation is based on the algorithm from our paper, [\[Freifeld, Li an
 See also our [project page](http://groups.csail.mit.edu/vision/sli/projects.php?name=fastSCSP).
 
 Dec 7, 2019, update 1: 
-[a Python 3 wrapper is availble here](https://github.com/BGU-CS-VIL/fastScsp)
+[a Python 3 wrapper, which also uses a slightly better parallelization, is availble here](https://github.com/BGU-CS-VIL/fastScsp)
 
 Dec 7, 2019, update 2: 
 Note that in ICCV 2019 we released a better superpixel method, called [Bayesian Adaptive Superpixel Segmentation](https://github.com/BGU-CS-VIL/BASS).
